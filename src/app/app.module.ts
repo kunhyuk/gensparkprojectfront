@@ -3,19 +3,26 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app.routing.module';
 import { AppComponent } from './app.component';
-import { EmployeeListComponent } from './employee-list/employee-list.component';
-import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { CardListComponent } from './card-list/card-list.component';
+import { CreateCardComponent } from './create-card/create-card.component';
 import { FormsModule} from '@angular/forms';
-import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
-import { EmployeeDetailsComponent } from './employee-details/employee-details.component'
+import { UpdateCardComponent } from './update-card/update-card.component';
+import { CardDetailsComponent } from './card-details/card-details.component';
+// import { CardDetailsComponent } from './card-details/card-details.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeListComponent,
-    CreateEmployeeComponent,
-    UpdateEmployeeComponent,
-    EmployeeDetailsComponent
+    CardListComponent,
+    CardListComponent,
+    UpdateCardComponent,
+    CardDetailsComponent,
+    CreateCardComponent
+    // AppComponent,
+    // CardListComponent,
+    // CreateCardComponent,
+    // UpdateCardComponent,
+    // CardDetailsComponent
   ],
   imports: [
     BrowserModule,
