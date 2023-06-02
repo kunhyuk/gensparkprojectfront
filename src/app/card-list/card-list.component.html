@@ -4,10 +4,57 @@
     <br>
 </div>
 
-<table class = "table table-striped table-bordered">
+<div class = "container">
+    <div class="To-do">
+        <div class="kanban_title">To-do</div>
     
+        <div class="card-container"> 
+    <div class="kanban-card" *ngFor = "let card of cards">
+        <div class="text" >
+                {{ card.text }}
+                
+        </div>
+        <div class="buttons"><button (click) = "updateCard(card.id)" class = "btn btn-primary"> </button>
+            <button (click) = "deleteCard(card.id)" class = "btn btn-danger" style="margin-left: 10px"> </button>
+            <!-- <button (click) = "cardDetails(card.id)" class = "btn btn-outline-dark" style="margin-left: 10px"> View</button></div> -->
+            </div>
+        </div>
+</div>
+        
+    </div>
+    <div class="Doing">
+        <div class="kanban_title">Doing</div>
+        <div class="card-container"> 
+            <div class="kanban-card" *ngFor = "let card of cards">
+                <div class="text" >
+                        {{ card.text }}
+                        
+                </div>
+                <div class="buttons"><button (click) = "updateCard(card.id)" class = "btn btn-primary"> </button>
+                    <button (click) = "deleteCard(card.id)" class = "btn btn-danger" style="margin-left: 10px"> </button>
+                    <!-- <button (click) = "cardDetails(card.id)" class = "btn btn-outline-dark" style="margin-left: 10px"> View</button></div> -->
+                    </div>
+                </div>
+        </div>
+    </div>
 
-    <thead>
+    <div class="Done">
+        <div class="kanban_title">Done</div>
+        <div class="card-container"> 
+            <div class="kanban-card" *ngFor = "let card of cards">
+                <div class="text" >
+                        {{ card.text }}
+                        
+                </div>
+                <div class="buttons"><button (click) = "updateCard(card.id)" class = "btn btn-primary"> </button>
+                    <button (click) = "deleteCard(card.id)" class = "btn btn-danger" style="margin-left: 10px"> </button>
+                    <!-- <button (click) = "cardDetails(card.id)" class = "btn btn-outline-dark" style="margin-left: 10px"> View</button></div> -->
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- <thead>
         <tr>
             <th> Status</th>
             <th> Text </th>
@@ -26,8 +73,8 @@
                 <button (click) = "cardDetails(card.id)" class = "btn btn-outline-dark" style="margin-left: 10px"> View</button>
             </td>
         </tr>
-    </tbody>
+    </tbody> -->
 
 
 
-</table>
+</div>

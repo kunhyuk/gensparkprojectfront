@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { Amplify, Auth } from 'aws-amplify';
+// import { Amplify, Auth } from 'aws-amplify';
 import { environment } from 'src/environments/environment';
-
+import { Amplify, Auth } from 'aws-amplify';
 export interface IUser {
   email: string;
   password: string;
