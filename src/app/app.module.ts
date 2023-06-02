@@ -8,6 +8,9 @@ import { CreateCardComponent } from './create-card/create-card.component';
 import { FormsModule} from '@angular/forms';
 import { UpdateCardComponent } from './update-card/update-card.component';
 import { CardDetailsComponent } from './card-details/card-details.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { LogoutComponent } from './logout/logout.component';
 // import { CardDetailsComponent } from './card-details/card-details.component'
 
 @NgModule({
@@ -17,7 +20,10 @@ import { CardDetailsComponent } from './card-details/card-details.component';
     CardListComponent,
     UpdateCardComponent,
     CardDetailsComponent,
-    CreateCardComponent
+    CreateCardComponent,
+    LoginComponent,
+    RegisterComponent,
+    LogoutComponent
     // AppComponent,
     // CardListComponent,
     // CreateCardComponent,
