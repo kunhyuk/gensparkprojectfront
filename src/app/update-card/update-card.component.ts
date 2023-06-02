@@ -20,7 +20,8 @@ export class UpdateCardComponent implements OnInit {
     this.id = this.route.snapshot.params['id'];
 
     this.cardService.getCardById(this.id).subscribe(data => {
-      this.card = data;
+    this.card = data;
+
     }, error => console.log(error));
   }
 
