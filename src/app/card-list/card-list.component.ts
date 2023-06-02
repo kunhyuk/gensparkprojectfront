@@ -29,7 +29,7 @@ export class CardListComponent implements OnInit {
   }
 
   updateCard(id: number){
-    this.router.navigate(['update-Card', id]);
+    this.router.navigate(['update-card', id]);
   }
 
   deleteCard(id: number){

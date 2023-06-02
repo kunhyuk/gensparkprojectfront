@@ -25,8 +25,8 @@ export class CardService {
   }
 
   
-  updateCard(id: number, card: Card): Observable<Object>{
-    return this.httpClient.put(`${this.baseURL}/card/update`, card);
+  updateCard(id: number, card: Card): Observable<Card>{
+    return this.httpClient.put<Card>(`${this.baseURL}/card/update/${id}`, card);
   }
 
   deleteCard(id: number): Observable<Object>{

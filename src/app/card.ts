@@ -4,6 +4,6 @@ export class Card {
     color: string;
     text: string;
     tags: string;
-    
+    cardCode: string;
     
 }
