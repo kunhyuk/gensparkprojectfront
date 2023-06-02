@@ -1,0 +1,33 @@
+<div class = "row">
+    <!-- <h2> Kanban Board</h2> -->
+    <br>
+    <br>
+</div>
+
+<table class = "table table-striped table-bordered">
+    
+
+    <thead>
+        <tr>
+            <th> Status</th>
+            <th> Text </th>
+            <th> Color</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let card of cards" >
+            <td> {{ card.status }} </td>
+            <td> {{ card.text }} </td>
+            <td> {{ card.color }} </td>
+            <td>
+                <button (click) = "updateCard(card.id)" class = "btn btn-outline-dark"> Update</button>
+                <button (click) = "deleteCard(card.id)" class = "btn btn-outline-dark" style="margin-left: 10px"> Delete</button>
+                <button (click) = "cardDetails(card.id)" class = "btn btn-outline-dark" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+
+
+
+</table>
