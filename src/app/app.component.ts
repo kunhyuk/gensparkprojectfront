@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CognitoService } from './cognito.service'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gensparkProjectFront';
+
+  constructor(private cognitoService: CognitoService) {}
+
+  public isAuthenticated(): boolean {
+    return this.cognitoService.isAuthenticated();
+  }
 }
