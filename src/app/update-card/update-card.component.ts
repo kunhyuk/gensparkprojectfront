@@ -35,4 +35,6 @@ export class UpdateCardComponent implements OnInit {
   goToCardList(){
     this.router.navigate(['/cards']);
   }
+
+
 }

@@ -9,11 +9,10 @@
         <div class="kanban_title">To-do</div>
     
         <div class="card-container"> 
-    <div class="kanban-card" *ngFor = "let card of cards">
-        <div class="text" >
-                {{ card.text }}
-                
-        </div>
+    <div class="kanban-card" *ngFor = "let card of todoCard">
+       
+        <div>{{ card.text }}</div>
+        
         <div class="buttons"><button (click) = "updateCard(card.id)" class = "btn btn-primary"> </button>
             <button (click) = "deleteCard(card.id)" class = "btn btn-danger" style="margin-left: 10px"> </button>
             <!-- <button (click) = "cardDetails(card.id)" class = "btn btn-outline-dark" style="margin-left: 10px"> View</button></div> -->
@@ -25,7 +24,7 @@
     <div class="Doing">
         <div class="kanban_title">Doing</div>
         <div class="card-container"> 
-            <div class="kanban-card" *ngFor = "let card of cards">
+            <div class="kanban-card" *ngFor = "let card of doingCard">
                 <div class="text" >
                         {{ card.text }}
                         
@@ -41,7 +40,7 @@
     <div class="Done">
         <div class="kanban_title">Done</div>
         <div class="card-container"> 
-            <div class="kanban-card" *ngFor = "let card of cards">
+            <div class="kanban-card" *ngFor = "let card of doneCard">
                 <div class="text" >
                         {{ card.text }}
                         

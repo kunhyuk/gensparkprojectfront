@@ -11,12 +11,14 @@ import { CardDetailsComponent } from './card-details/card-details.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { LogoutComponent } from './logout/logout.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+ 
 // import { CardDetailsComponent } from './card-details/card-details.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardListComponent,
     CardListComponent,
     UpdateCardComponent,
     CardDetailsComponent,
@@ -24,11 +26,7 @@ import { LogoutComponent } from './logout/logout.component';
     LoginComponent,
     RegisterComponent,
     LogoutComponent
-    // AppComponent,
-    // CardListComponent,
-    // CreateCardComponent,
-    // UpdateCardComponent,
-    // CardDetailsComponent
+
   ],
   imports: [
     BrowserModule,
@@ -37,6 +35,10 @@ import { LogoutComponent } from './logout/logout.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA,
+    NO_ERRORS_SCHEMA
+  ]
 })
 export class AppModule { }
