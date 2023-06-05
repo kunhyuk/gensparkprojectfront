@@ -35,6 +35,8 @@ export class UpdateCardComponent implements OnInit {
   goToCardList(){
     this.router.navigate(['/cards']);
   }
-
+//   onChange(value: any) {
+//     this.card.status = value.target.value;
+// }
 
 }

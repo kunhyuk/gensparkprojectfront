@@ -11,10 +11,13 @@ import { Router } from '@angular/router';
 export class CreateCardComponent implements OnInit {
 
   card: Card = new Card();
+  // options=["To-do", "Done", "Doing"]
+  // listOfOptions = []
   constructor(private cardService: CardService,
     private router: Router) { }
 
   ngOnInit(): void {
+    // this.setOptions();
   }
 
   saveCard(){
@@ -33,4 +36,14 @@ export class CreateCardComponent implements OnInit {
     console.log(this.card);
     this.saveCard();
   }
+
+//   onChange(value: any) {
+//     this.card.status = value.target.value;
+// }
+
+  // setOptions() {
+  //   setTimeout(() => {
+  //     this.listOfOptions.push(this.options);
+  //   }, 5000)
+  // }
 }

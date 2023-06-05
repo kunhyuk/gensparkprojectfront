@@ -19,6 +19,7 @@ export class CardListComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit(): void {
+    
     this.getCards();
     
   }
@@ -34,6 +35,9 @@ export class CardListComponent implements OnInit {
   // }
 
   private getCards(){
+    this.todoCard = [];
+    this.doingCard = [];
+    this.doneCard = [];
     this.cardService.getCardsList().subscribe(data => {
       this.cards = data;
       data.map(dat => {
