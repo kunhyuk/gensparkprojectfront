@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark justify-content-between">
   <ul class = "navbar-nav">
       <li class = "nav-item">
           <a routerLink="cards" routerLinkActive="active" class="nav-link" *ngIf="isAuthenticated()">Kanban board</a>
@@ -6,21 +6,17 @@
       <li class = "nav-item">
           <a routerLink="create-card" routerLinkActive="active" class="nav-link" *ngIf="isAuthenticated()">Add card</a>
       </li>
-      <li class = "nav-item">
-        <a class="nav-link" routerLink="/register" *ngIf="!isAuthenticated()">Register</a>
-      </li>
-      <li class = "nav-item">
-        <a class="nav-link" routerLink="/login" *ngIf="!isAuthenticated()">Login</a>
-      </li>
-      <li class = "nav-item">
-        <a class="nav-link" routerLink="/logout" *ngIf="isAuthenticated()">Logout</a>
-      </li>
-      <li class = "nav-item">
-        <a class="nav-link">Login</a>
-      </li>
-      <li class = "nav-item">
-        <a class="nav-link">Logout</a>
-      </li>
+  </ul>
+  <ul class = "navbar-nav">
+    <li class = "nav-item">
+      <a class="nav-link" routerLink="/register" *ngIf="!isAuthenticated()">Register</a>
+    </li>
+    <li class = "nav-item">
+      <a class="nav-link" routerLink="/login" *ngIf="!isAuthenticated()">Login</a>
+    </li>
+    <li class = "nav-item">
+      <a class="nav-link" routerLink="/logout" *ngIf="isAuthenticated()">Logout</a>
+    </li>
   </ul>
 </nav>
 
