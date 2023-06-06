@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Card } from '../card'
 import { CardService } from '../card.service'
 import { Router } from '@angular/router';
@@ -14,6 +14,8 @@ export class CardListComponent implements OnInit {
   todoCard: Card[] = [];
   doingCard: Card[] = [];
   doneCard: Card[] = [];
+  
+
 
   constructor(private cardService: CardService,
     private router: Router) { }
@@ -68,6 +70,22 @@ export class CardListComponent implements OnInit {
     this.cardService.deleteCard(id).subscribe( data => {
       console.log(data);
       this.getCards();
+    })
+  }
+
+  getBackgroundColor() {
+    this.todoCard.map(data => {
+      if (data.color == "Red") {
+        
+      } else if (data.color == "Blue") {
+
+      } else if (data.color == "Green") {
+        
+      } else if (data.color == "Black") {
+        
+      } else if (data.color == "White") {
+        
+      }
     })
   }
 

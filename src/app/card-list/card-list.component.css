@@ -20,10 +20,21 @@ ol {
     float: right;
     width: 60%;
   }
+
+  .colour {
+    width: 20px;
+    height: 20px;
+    align-content:flex-end;
+  }
 .kanban-card {
     margin: 20px;
-  background-color: aliceblue;
+    background-color: aliceblue;
 }
+
+/* .card-container {
+    margin: 20px;
+    background-color: aliceblue;
+} */    
 
 .Doing {
     background-color: #fec6d1;
@@ -48,6 +59,8 @@ ol {
 .kanban_title {
     background-color: bisque;
     display: flex;
+    max-height: 25px;
+
 }
 
 div {

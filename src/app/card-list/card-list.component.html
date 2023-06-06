@@ -5,7 +5,7 @@
 </div>
 
 <div class = "container">
-    <div class="To-do">
+    <div class="To-do row">
         <div class="kanban_title">To-do</div>
     
         <div class="card-container"> 
@@ -13,15 +13,16 @@
        
         <div>{{ card.text }}</div>
         
-        <div class="buttons"><button (click) = "updateCard(card.id)" class = "btn btn-primary"> </button>
+        <div class="buttons col"><button (click) = "updateCard(card.id)" class = "btn btn-primary"> </button>
             <button (click) = "deleteCard(card.id)" class = "btn btn-danger" style="margin-left: 10px"> </button>
             <!-- <button (click) = "cardDetails(card.id)" class = "btn btn-outline-dark" style="margin-left: 10px"> View</button></div> -->
             </div>
+            <div class="colour" [ngStyle]="{'background-color': card.color}"></div>
         </div>
 </div>
         
     </div>
-    <div class="Doing">
+    <div class="Doing row">
         <div class="kanban_title">Doing</div>
         <div class="card-container"> 
             <div class="kanban-card" *ngFor = "let card of doingCard">
@@ -33,11 +34,12 @@
                     <button (click) = "deleteCard(card.id)" class = "btn btn-danger" style="margin-left: 10px"> </button>
                     <!-- <button (click) = "cardDetails(card.id)" class = "btn btn-outline-dark" style="margin-left: 10px"> View</button></div> -->
                     </div>
+                    <div class="colour" [ngStyle]="{'background-color': card.color}"></div>
                 </div>
         </div>
     </div>
 
-    <div class="Done">
+    <div class="Done row">
         <div class="kanban_title">Done</div>
         <div class="card-container"> 
             <div class="kanban-card" *ngFor = "let card of doneCard">
@@ -49,6 +51,7 @@
                     <button (click) = "deleteCard(card.id)" class = "btn btn-danger" style="margin-left: 10px"> </button>
                     <!-- <button (click) = "cardDetails(card.id)" class = "btn btn-outline-dark" style="margin-left: 10px"> View</button></div> -->
                     </div>
+                    <div class="colour" [ngStyle]="{'background-color': card.color}"></div>
                 </div>
         </div>
     </div>

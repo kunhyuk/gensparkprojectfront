@@ -22,10 +22,16 @@
                             name="lastName">
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" >
                         <label> Color </label>
-                        <input type="text" class="form-control" id="emailId" [(ngModel)]="card.color"
+                        <select class="form-control" id="emailId" [(ngModel)]="card.color"
                             name="emailId">
+                            <option>Red</option> 
+                            <option>Green</option> 
+                            <option>Blue</option> 
+                            <option>Black</option> 
+                            <option>White</option> 
+                        </select>
                     </div>
                     <br />
                     <button class="btn btn-success" type="submit">Submit</button>
