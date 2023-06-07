@@ -10,10 +10,10 @@ import { LogoutComponent } from './logout/logout.component'
 import { RouteGuardService } from './route-guard.service'
 
 const routes: Routes = [
-  {path: 'cards', component: CardListComponent, canActivate: [RouteGuardService]},
+  {path: 'cards', component: CardListComponent}, //, canActivate: [RouteGuardService]
   {path: 'create-card', component: CreateCardComponent, canActivate: [RouteGuardService]},
   {path: '', redirectTo: 'cards', pathMatch: 'full'},
-  {path: 'update-card/:id', component: UpdateCardComponent, canActivate: [RouteGuardService]},
+  {path: 'update-card/:id', component: UpdateCardComponent}, //, canActivate: [RouteGuardService]
   {path: 'card-details/:id', component: CardDetailsComponent, canActivate: [RouteGuardService]},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},

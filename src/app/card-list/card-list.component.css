@@ -15,7 +15,7 @@ ol {
     max-width: 650px;
     margin: 0 auto;
   }
-  
+
   ol.list .text {
     float: right;
     width: 60%;
@@ -34,7 +34,7 @@ ol {
 /* .card-container {
     margin: 20px;
     background-color: aliceblue;
-} */    
+} */
 
 .Doing {
     background-color: #fec6d1;
@@ -53,7 +53,7 @@ ol {
     flex-direction: row;
     justify-content: space-between;
     font-family: sans-serif;
-    
+
 }
 
 .kanban_title {
@@ -68,9 +68,7 @@ div {
 }
 
 button {
-    font-size: xx-small;
-    height:30px;
-    width:30px;
+    font-size: small;
     border-radius: 12px;
 }
 
