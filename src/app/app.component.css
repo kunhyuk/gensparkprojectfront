@@ -2,7 +2,11 @@
     background-color: black;
     color: aliceblue;
     text-align: center;
-    bottom: 0;
     width: 100%;
-    position: fixed;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h1 {
+  margin: 1em;
 }
