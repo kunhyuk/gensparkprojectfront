@@ -9,58 +9,28 @@ ol {
     transition: border-color 2s ease, all 0.1s ease;
   }
 
-  ol.list {
-    padding-top: 2em;
-    padding-left: 15px;
-    max-width: 650px;
-    margin: 0 auto;
-  }
-
-  ol.list .text {
-    float: right;
-    width: 60%;
-  }
-
-  .colour {
-    width: 20px;
-    height: 20px;
-    align-content:flex-end;
-  }
-.kanban-card {
-    margin: 20px;
-    background-color: aliceblue;
+ol.list {
+  padding-top: 2em;
+  padding-left: 15px;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
-/* .card-container {
-    margin: 20px;
-    background-color: aliceblue;
-} */
-
-.Doing {
-    background-color: #fec6d1;
+ol.list .text {
+  float: right;
+  width: 60%;
 }
 
-.To-do {
-    background-color: #ffaf00;
+.colour {
+  width: 20px;
+  height: 20px;
+  align-content:flex-end;
 }
 
-.Done {
-    background-color: #018b01;
-}
-
-.container {
+.flex-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     font-family: sans-serif;
-
-}
-
-.kanban_title {
-    background-color: bisque;
-    display: flex;
-    max-height: 25px;
-
 }
 
 div {
@@ -72,9 +42,42 @@ button {
     border-radius: 12px;
 }
 
-.text {
-    width: fit-content;
-    max-width: 300px;
-    word-wrap: break-word;
+.card-container-todo {
+  background-color: #ebf57d
 }
+
+.card-container-doing {
+  background-color: #87f57d
+}
+
+.card-container-done {
+  background-color: #f57d9f
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.kanban-card {
+    margin: 2em;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.buttons {
+  padding: .5em;
+}
+
+.kanban-title {
+  padding-top: 1em;
+  padding-top: 1em;
+}
+
+
+
+
+
 
