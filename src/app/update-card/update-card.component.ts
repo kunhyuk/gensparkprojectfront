@@ -17,16 +17,22 @@ export class UpdateCardComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit(): void {
+    console.log("working");
+    console.log(this.card);
     this.id = this.route.snapshot.params['id'];
 
     this.cardService.getCardById(this.id).subscribe(data => {
-    this.card = data;
+      this.card = data;
+      console.log(data);
+      console.log(this.card);
 
-    }, error => console.log(error));
+    }, error => console.log("error", error));
   }
 
   onSubmit(){
     this.cardService.updateCard(this.id, this.card).subscribe( data =>{
+      console.log(data);
+      console.log(this.card);
       this.goToCardList();
     }
     , error => console.log(error));

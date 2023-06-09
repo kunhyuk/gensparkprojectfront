@@ -11,7 +11,7 @@ export class CardService {
   private baseURL = "http://localhost:9080";
 
   constructor(private httpClient: HttpClient) { }
-  
+
   getCardsList(): Observable<Card[]>{
     return this.httpClient.get<Card[]>(`${this.baseURL}/card/all`);
   }
@@ -21,10 +21,10 @@ export class CardService {
   }
 
   getCardById(id: number): Observable<Card>{
-    return this.httpClient.get<Card>(`${this.baseURL}card/find/${id}`);
+    return this.httpClient.get<Card>(`${this.baseURL}/card/find/${id}`);
   }
 
-  
+
   updateCard(id: number, card: Card): Observable<Card>{
     return this.httpClient.put<Card>(`${this.baseURL}/card/update/${id}`, card);
   }
