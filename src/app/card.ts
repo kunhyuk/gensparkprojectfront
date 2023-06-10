@@ -5,5 +5,4 @@ export class Card {
     text: string;
     tags: string;
     cardCode: string;
-    
 }
