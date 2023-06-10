@@ -29,7 +29,7 @@ ol.list .text {
 
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     font-family: sans-serif;
 }
 
@@ -43,27 +43,28 @@ button {
 }
 
 .card-container-todo {
-  background-color: #ebf57d
+  background-color: #292928;
 }
 
 .card-container-doing {
-  background-color: #87f57d
+  background-color: #292928;
 }
 
 .card-container-done {
-  background-color: #f57d9f
+  background-color: #292928;
 }
 
-.title-container {
-  display: flex;
-  justify-content: space-around;
+.card-container {
+  width: 25%;
+  margin: 1em;
+  background-color: #292928;
+  border-radius: 10px;
 }
 
 .kanban-card {
     margin: 2em;
-    background-color: aliceblue;
-    border: 2px solid black;
-    border-radius: 5px;
+    background-color: #999897;
+    border-radius: 10px;
     padding: 1em;
 }
 
@@ -72,8 +73,15 @@ button {
 }
 
 .kanban-title {
+  color: #dedede;
+  text-align: left;
   padding-top: 1em;
-  padding-top: 1em;
+  padding-left: 1em;
+}
+
+i {
+  cursor: pointer;
+  margin: 0 20px;
 }
 
 

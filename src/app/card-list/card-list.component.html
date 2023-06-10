@@ -18,13 +18,15 @@
 
 <div class = "flex-container">
 
-    <div class="card-container-todo">
+    <div class="card-container todo">
         <h4 class="kanban-title">To-do</h4>
         <div class="kanban-card" *ngFor = "let card of todoCard">
           <div class="text" [ngStyle]="{'color': card.color}">{{ card.text }}</div>
           <div class="buttons col">
-            <button (click) = "updateCard(card.id)" class = "btn btn-primary">Edit</button>
-            <button (click) = "deleteCard(card.id)" class = "btn btn-danger" style="margin-left: 10px">Delete </button>
+<!--            <button (click) = "updateCard(card.id)" class = "btn btn-primary">Edit</button>-->
+            <i (click) = "updateCard(card.id)" class="fa-solid fa-pen-to-square"></i>
+            <i (click) = "deleteCard(card.id)" class="fa-solid fa-trash"></i>
+<!--            <button (click) = "deleteCard(card.id)" class = "btn btn-danger" style="margin-left: 10px">Delete </button>-->
           </div>
         </div>
     </div>
@@ -32,26 +34,30 @@
 
 
 
-    <div class="card-container-doing">
+    <div class="card-container doing">
       <h4 class="kanban-title">Doing</h4>
       <div class="kanban-card" *ngFor = "let card of doingCard">
             <div class="text" [ngStyle]="{'color': card.color}">{{ card.text }}</div>
             <div class="buttons">
-                <button (click) = "updateCard(card.id)" class = "btn btn-primary">Edit</button>
-                <button (click) = "deleteCard(card.id)" class = "btn btn-danger" style="margin-left: 10px">Delete</button>
+<!--                <button (click) = "updateCard(card.id)" class = "btn btn-primary">Edit</button>-->
+                <i (click) = "updateCard(card.id)" class="fa-solid fa-pen-to-square"></i>
+                <i (click) = "deleteCard(card.id)" class="fa-solid fa-trash"></i>
+<!--                <button (click) = "deleteCard(card.id)" class = "btn btn-danger" style="margin-left: 10px">Delete</button>-->
             </div>
         </div>
     </div>
 
 
 
-    <div class="card-container-done">
+    <div class="card-container done">
       <h4 class="kanban-title">Done</h4>
       <div class="kanban-card" *ngFor = "let card of doneCard">
           <div class="text" [ngStyle]="{'color': card.color}">{{ card.text }}</div>
             <div class="buttons">
-                <button (click) = "updateCard(card.id)" class = "btn btn-primary">Edit </button>
-                <button (click) = "deleteCard(card.id)" class = "btn btn-danger" style="margin-left: 10px">Delete </button>
+<!--                <button (click) = "updateCard(card.id)" class = "btn btn-primary">Edit </button>-->
+                <i (click) = "updateCard(card.id)" class="fa-solid fa-pen-to-square"></i>
+              <i (click) = "deleteCard(card.id)" class="fa-solid fa-trash"></i>
+<!--                <button (click) = "deleteCard(card.id)" class = "btn btn-danger" style="margin-left: 10px">Delete </button>-->
             </div>
         </div>
    </div>

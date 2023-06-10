@@ -10,7 +10,9 @@ import { Router } from '@angular/router';
 })
 export class CreateCardComponent implements OnInit {
 
+
   card: Card = new Card();
+  //selectedStatus = "To-do";
   // options=["To-do", "Done", "Doing"]
   // listOfOptions = []
   constructor(private cardService: CardService,
@@ -31,7 +33,7 @@ export class CreateCardComponent implements OnInit {
   goToCardList(){
     this.router.navigate(['/cards']);
   }
-  
+
   onSubmit(){
     console.log(this.card);
     this.saveCard();
